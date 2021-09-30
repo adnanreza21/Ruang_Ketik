@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".materi.Materi1Activity">
+
+    <TextView
+        android:id="@+id/txt11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Materi 01"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt11">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="A. Pengertian Pengetikan Cepat dan Tepat"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Mengetik cepat adalah sebuah proses dalam mengetik dalam teori jari dan keserempakan hentakan pada papan ketik yang menghasilkan teks atau angka atau simbol dengan rapi, cepat dan tepat sesuai dengan mata tanpa melihat keyboard."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="1. Teknik Pengetikan (Keyboarding)"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="a. Latihan manual"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Latihan yang dilakukan dengan memperhatikan penggunaan jari pada tuts keyboard. Setiap jari mempunyai tugas tertentu untuk menekan tuts."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="b. Latihan menggunakan program atau aplikasi"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Latihan mengetik 10 jari dapat dilakukan dengan bantuan program atau aplikasi. Program yang membantu dalam mengetik 10 jari anatara lain TIPP 10, Tayping Master Pro, Rapid Typing, Piano Typing Turbo, Maxtype Lite dan masih banyak lagi."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="c. Latihan dengan bantuan situs internet"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Selain menggunakan program, metode latihan mengetik 10 jari dapat dilakukan dengan bantuan situs. Situs yang bermanfaat dalam membantu latihan adalah TypingWeb dan Typing Online."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="d. Latihan mengetik cepat yang menyenangkan"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:text="Klik tombol di bawah ini untuk materi berupa suara"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <ToggleButton
+                android:id="@+id/sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_button_purple"
+                android:textColor="@color/white"
+                android:onClick="onToggleClicked"
+                android:textOn="Play"
+                android:textOff="Stop"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

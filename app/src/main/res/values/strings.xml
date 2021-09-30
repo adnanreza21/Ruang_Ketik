@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ruang Ketik</string>
+    <string name="link1">
+        <a href="https://youtu.be/olrjP1ZjWxI">Klik Link Ini</a>
+    </string>
+    <string name="link2">
+        <a href="https://youtu.be/jkiVHwNT_Ug">Klik Link Ini</a>
+    </string>
+</resources>
